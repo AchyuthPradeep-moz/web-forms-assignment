@@ -98,13 +98,14 @@ li {
 {
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items:center;
     padding:50px;
     margin:50px;
 }
 .subscription
 {
+    display:flex;
     background-color:beige;
     padding:60px;
     align-items:center;
