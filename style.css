@@ -6,6 +6,10 @@
 :root {
     --brand-color: rgb(43, 43, 127);
 }
+section
+{
+    margin: 80px;
+}
 header{
 display:flex;
 flex-direction:row;
@@ -93,7 +97,7 @@ justify-content:space-between;
 }
 .product-img
 {
-    width:120ox;
+    width:120px;
     height:120px;
     object-fit: contain;
     
@@ -186,6 +190,7 @@ justify-content:space-between;
     align-items:center;
     padding:50px;
     margin:50px;
+    gap: 30px;
 }
 .subscription
 {
@@ -193,7 +198,7 @@ justify-content:space-between;
     background-color:beige;
     padding:60px;
     align-items:center;
-    font-size:50px;
+    font-size:32px;
     color:var(--brand-color);
 }
 .button
@@ -208,7 +213,7 @@ justify-content:space-between;
 
 {
     display:flex;
-    font-size:32px;
+    font-size:20px;
     color:var(--brand-color);
     flex-direction:row;
     justify-content:space-between;
@@ -252,6 +257,7 @@ justify-content:space-between;
         font-size: 32px;
         padding: 40px;
     }
+    
 }
 
 @media (max-width:768px) {
@@ -297,9 +303,7 @@ justify-content:space-between;
 
     .pricing {
         flex-direction: column;
-        padding: 20px;
-        margin: 20px;
-        gap: 20px;
+        text-align: center;
     }
 
     .subscription {
@@ -310,8 +314,8 @@ justify-content:space-between;
     }
 
     .button {
-        font-size: 18px;
-        padding: 15px 25px;
+        font-size: 16px;
+        padding: 5px 25px;
     }
 
     .footer {
