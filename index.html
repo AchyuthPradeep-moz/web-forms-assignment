@@ -125,20 +125,20 @@
                 <fieldset>
                     <legend> Account Information</legend>
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name" required>
+                    <input type="text" id="full-name" name="full-name" autocomplete="name" required>
                     <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username"  pattern="^[a-zA-Z0-9_]{6,16}$" title="username must be 6-16 characters and can include letters,numbers,underscores" required>
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="placeholder" required minlength="8">
+                    <input type="password" id="password" name="password" required minlength="8">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" >
                 </fieldset>
                 <fieldset>
                     <legend>Contact Information</legend>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" minlength="10">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Phone number must be 10 digit" autocomplete="tel" required> 
                     <label for="company">Company Name (optional)</label>
                     <input type="text" id="company" name="company" >
                     <label for="website">Website (optional)</label>
@@ -149,15 +149,15 @@
                     <label for="billing-name">Billing name</label>
                     <input type="text" id="billing-name" name="billing-name" required>
                     <label for="Billing-email">Billing Email</label>
-                    <input type="text" id="Billing-email" name="Billing-email" required>
+                    <input type="email" id="Billing-email" name="Billing-email" required>
                     <label for="address">Address Line 1</label>
-                    <input type="text" id="address" name="address" placeholder="House No,Street Name/Apartment" required>
-                    <label type="city">City</label>
+                    <input type="text" id="address" name="address" placeholder="House No,Street Name/Apartment" autocomplete="address-line1">
+                    <label for="city">City</label>
                     <input type="text" id="city" name="city" required>
-                    <label type="state">State</label>
+                    <label for="state">State</label>
                     <input type="text" id="state" name="state" required>
-                     <label type="postal">Postal Code</label>
-                    <input type="text" id="postal" name="postal" required>
+                     <label for="postal">Postal Code</label>
+                    <input type="text" id="postal" name="postal" pattern="[0-9]{6}" title="Postal code must be 6 digits" required>
                     <label for="country">Country</label>
                     <select id="country" name="country" required>
                         <option value="">Select Country</option>
@@ -169,18 +169,18 @@
                         <option value="fra">France</option>
                     </select>
                 <label for="address2">Address Line 2(optional)</label>
-                    <input type="text" id="address2" name="address2" placeholder="House No,Street Name/Apartment,City,State,Country">
+                    <input type="text" id="address2" name="address2" placeholder="House No,Street Name/Apartment,City,State,Country" autocomplete="address-line2">
                 </fieldset>
                 <fieldset>
                     <legend>Payment Information</legend>
                     <label for="card-holder">Card Holder Name</label>
-                    <input type="text" id="card-holder" name="card-holder" required>
+                    <input type="text" id="card-holder" name="card-holder" autocomplete="name" required>
                     <label for="card-number">Card Number</label>
-                    <input type="number" id="card-number" name="card-number" required>
+                    <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" title="Card number must be 16 digits" autocomplete="cc-number" required>
                     <label for="expiry">Expiry Date</label>
                     <input type="month" id="expiry" name="expiry" required>
                     <label for="cvv">CVV</label>
-                    <input type="password" id="cvv" name="cvv" placeholder="---" maxlength="4" required>
+                    <input type="password" id="cvv" name="cvv" placeholder="---" pattern="[0-9]{3,4}" title="CVV must be 3 or 4 digits" required>
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>
