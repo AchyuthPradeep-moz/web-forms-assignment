@@ -145,8 +145,33 @@
                     <input type="url" id="website" name="website" >
                 </fieldset>
                 <fieldset>
-                    
+                    <legend>Billing Information</legend>
+                    <label for="billing-name">Billing name</label>
+                    <input type="text" id="billing-name" name="billing-name" required>
+                    <label for="Billing-email">Billing Email</label>
+                    <input type="text" id="Billing-email" name="Billing-email" required>
+                    <label for="address">Address Line 1</label>
+                    <input type="text" id="address" name="address" placeholder="House No,Street Name/Apartment" required>
+                    <label type="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                    <label type="state">State</label>
+                    <input type="text" id="state" name="state" required>
+                     <label type="postal">Postal Code</label>
+                    <input type="text" id="postal" name="postal" required>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="ind">India</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">United States of America</option>
+                        <option value="aus">Australia</option>
+                        <option value="sin">Singapore</option>
+                        <option value="fra">France</option>
+                    </select>
+                <label for="address2">Address Line 2(optional)</label>
+                    <input type="text" id="address2" name="address2" placeholder="House No,Street Name/Apartment,City,State,Country">
                 </fieldset>
+                
                 <button>Submit</button>
             </form>
     </section>
